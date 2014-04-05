@@ -8,7 +8,7 @@ inc:
   # Company information
   company:      unicone
   url:          http://unicone.com/
-  about_link:   http://unicone.com/about/
+  about_link:   "/about"
   # facebook:   ""
   # twitter:    ""
   # gplus:      ""
