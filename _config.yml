@@ -1,47 +1,45 @@
 inc:
   # Blog Information
-  title:        "Jekyll Incorporated"
-  subtitle:     "Modern Jekyll based blog for companies"
+  title:        "unicone"
+  # subtitle:     ""
   cover_image:  blog-cover.jpg
   logo:         logo.png
-  
+
   # Company information
-  company:      Incorporated
-  url:          http://sendtoinc.com/
-  facebook:     sendtoinc
-  twitter:      sendtoinc
-  gplus:        '101183822199340201470'
-  about_link:   https://sendtoinc.com/about/
-  
+  company:      unicone
+  url:          http://unicone.com/
+  about_link:   http://unicone.com/about/
+  # facebook:   ""
+  # twitter:    ""
+  # gplus:      ""
+
   # Product Information
-  product_link: http://incorporated.sendtoinc.com/
-  tagline:      "Get a modern blog for your company"
-  
+  # product_link: ""
+  # tagline: ""
+
   # Comments
   disqus:
     # Eg. "exampleblog" Set to false to disable comments
     shortname:  false
-  
+
   # Sharing settings
   sharing:
     twitter:    false
     facebook:   false
     gplus:      false
     hn:         false
-    
-  
- # Analytics     
+
+  # Analytics
   analytics:
     google: false # Add tracking code in _includes/_google-analytics.html
-      
-      
+
   # Google Fonts
   # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
   google_font: 'Droid+Sans:400,700'
-  
+
   # Setup your fonts, colors etc at _assets/stylesheets/main.scss
 
-url:         http://incorporated.sendtoinc.com
+url:         http://unicone.com
 source:      .
 destination: ./_site
 plugins:     ./_plugins
@@ -60,7 +58,7 @@ relative_permalinks: true
 
 permalink:     pretty
 paginate_path: 'page:num'
-paginate: 10
+paginate: 5
 
 markdown:      maruku
 markdown_ext:  markdown,mkd,mkdn,md
