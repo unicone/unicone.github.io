@@ -9,6 +9,7 @@ inc:
   company:      unicone
   url:          http://unicone.com/
   about_link:   "/about"
+  contact_link: "/contact"
   # facebook:   ""
   # twitter:    ""
   # gplus:      ""
