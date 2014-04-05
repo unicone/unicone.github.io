@@ -2,7 +2,7 @@ inc:
   # Blog Information
   title:        "unicone"
   # subtitle:     ""
-  cover_image:  blog-cover.jpg
+  cover_image:  ""
   logo:         logo.png
 
   # Company information
