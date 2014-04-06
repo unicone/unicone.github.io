@@ -1,49 +1,74 @@
 ---
 layout: base
 ---
-<div class="blog-cover" style="background-image:url(/images/{{ site.inc.cover_image }});">
-    <section>
-        <div class="container">
-            <h1>{{ site.inc.title }}</h1>
-            {% if site.inc.subtitle %}<h3>{{ site.inc.subtitle }}</h3>{% endif %}
 
-            {% if site.inc.twitter %}
-            <a href="https://twitter.com/{{ site.inc.twitter }}" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter"></i></a>
-            {% endif %}
-            {% if site.inc.facebook %}
-            <a href="http://facebook.com/{{ site.inc.facebook }}" title="Like on Facebook" target="_blank"><i class="icon icon-facebook"></i></a>
-            {% endif %}
-        </div>
-    </section>
-</div>
+<section class="services">
+  <h2>Services</h2>
 
-<article class="container">
-{% for post in paginator.posts %}
-  {% unless post.draft %}
-    <section class="index">
-        <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
-        <div>
-            <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
-            <p>{{ post.excerpt }}</p>
-            <div class="meta">
-                Written By <address>{{ post.author.name }}</address> &mdash;
-                <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
-            </div>
-        </div>
-        <hr>
-    </section>
-    {% endunless %}
-    {% endfor %}
-    <section class="pagination" style="text-align:center">
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <a href="/" class="btn btn-outline">‹ Newer</a>
-        {% else %}
-        <a href="/page{{ paginator.previous_page }}" class="btn btn-outline">‹ Newer</a>
-        {% endif %}
-      {% endif %}
-      {% if paginator.next_page %}
-        <a href="/page{{ paginator.next_page }}" class="btn btn-outline">Older ›</a>
-      {% endif %}
-    </section>
-</article>
+  <p class="subtitle">
+    What we can do for you
+  </p>
+
+  <div class=".container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <h3>Consultancy</h3>
+
+        <p class="description">
+          We find out what your business needs and make it happen. So you can concentrate on growing your business.
+        </p>
+      </div>
+
+      <div class="col-md-3">
+        <h3>Bespoke solutions</h3>
+
+        <p class="description">
+          We offer bespoke web solutions with open source technologies to solve your business problems.
+        </p>
+      </div>
+
+      <div class="col-md-3">
+        <h3>Join your team</h3>
+
+        <p class="description">
+          Need more resources? We can have one of engineers on-site to help your team meet business needs.
+        </p>
+      </div>
+
+      <div class="col-md-3">
+        <h3>Training</h3>
+
+        <p class="description">
+          It's important for your staff to be good at what they do. We offer one-to-one or group training to coach your team.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="clients">
+  <h2>Clients</h2>
+  <p class="subtitle">
+    People we've worked with
+  </p>
+  <div class="grid">
+    <div>
+      <img src="/images/clients/mas.svg"></img>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p class="subtitle">
+    Get in touch to find out more
+  </p>
+
+  <p>
+    Email us at <a href="mailto:hello@unicone.com">hello&#64;unicone.com</a>
+  </p>
+</section>

@@ -11,12 +11,52 @@ $text: #21272d;
 $textmuted: #848484;
 $accent: #2077b2;
 
+body {
+  background-color: #eee;
+}
 
-/* IMPORT CSS FILES */
-@import "bootstrap";
-@import "base";
-@import "nav";
-@import "article";
-@import "icons";
-@import "syntax";
-@import "responsive";
+hr {
+  border-top-color: #ddd;
+}
+
+nav .brand img {
+  padding: 20px;
+}
+
+.site-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #000;
+
+  color: #eee;
+}
+
+section.clients,
+section.services,
+section.about,
+section.contact {
+  text-align: center;
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #65777b;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .description {
+    padding: 0 20px 20px 20px;
+    text-align: left;
+  }
+
+  img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
