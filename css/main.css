@@ -1,23 +1,39 @@
-
-/* CONFIGURATION */
-
-/* Bodytext font */
-/* $font: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-
-/* Font for headings */
-/* $fontheadings: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-
-/* Text colors */
-/* $text: #21272d; */
-/* $textmuted: #848484; */
-/* $accent: #2077b2; */
-
 body {
   background-color: #eee;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #21272d;
+}
+
+h1 {
+    font-weight:600;
+    font-size:2.1em;
+    margin:0.5em 0 1em;
+}
+
+h2 {
+    font-size:1.5em;
+    margin:0.5em 0 1em;
+    font-weight:600;
+}
+
+h3 {
+    font-size:1.3em;
+    font-weight:600;
+}
+
+h4 {
+    font-size:1.2em;
+    font-weight:600;
 }
 
 hr {
   border-top-color: #ddd;
+}
+
+.navbar {
+  border-bottom: black 1px solid;
+  margin-bottom: 40px;
+  background-color: white;
 }
 
 nav .brand img {
@@ -33,31 +49,22 @@ nav .brand img {
   color: #eee;
 }
 
-section.clients,
-section.services,
-section.about,
-section.contact {
-  text-align: center;
+section.clients h2,
+section.services h2,
+section.about h2,
+section.contact h2 {
+  display: inline-block;
+}
 
-  h2 {
-    font-size: 40px;
-  }
+section.clients .subtitle,
+section.services .subtitle,
+section.about .subtitle,
+section.contact .subtitle {
+  display: inline-block;
+  margin-left: 2px;
+  color: #848484;
+}
 
-  .subtitle {
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: #65777b;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .description {
-    padding: 0 20px 20px 20px;
-    text-align: left;
-  }
-
-  img {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+.grid, .content {
+  margin-top: 20px;
 }
