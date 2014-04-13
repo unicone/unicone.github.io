@@ -32,12 +32,25 @@ hr {
 
 .navbar {
   border-bottom: black 1px solid;
-  margin-bottom: 0px;
   background-color: white;
 }
 
-nav .brand img {
-  padding: 20px;
+.navbar-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.brand {
+  font-size: 36px;
+  font-weight: bold;
+  border: 6px solid black;
+  padding: 2px 6px 2px 6px;
+  color: black;
+}
+
+.brand:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .site-footer {
