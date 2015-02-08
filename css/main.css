@@ -38,6 +38,7 @@ hr {
 .navbar {
   border-bottom: black 1px solid;
   background-color: white;
+  border-radius: 0;
 }
 
 .navbar-header {
