@@ -43,8 +43,8 @@ inc:
 url:         http://unicone.com
 source:      .
 destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
+plugins_dir:     ./_plugins
+layouts_dir:     ./_layouts
 include:     ['.htaccess']
 exclude:     []
 timezone:    nil
@@ -53,11 +53,9 @@ timezone:    nil
 future:      false
 show_drafts: nil
 limit_posts: 0
-pygments:    true
+highlighter: false
 
 permalink:     pretty
-paginate_path: 'page:num'
-paginate: 5
 
 markdown:      kramdown
 markdown_ext:  markdown,mkd,mkdn,md
@@ -90,7 +88,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: false
+  enable_coderay: false
 
   coderay:
     coderay_wrap: div
