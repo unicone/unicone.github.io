@@ -4,6 +4,7 @@ inc:
   # subtitle:     ""
   cover_image:  ""
   logo:         logo.png
+  description: "A software consultancy. We find out what your business needs are and make it happen. So you can concentrate on growing your business."
 
   # Company information
   company:      unicone
